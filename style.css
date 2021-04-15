@@ -1,0 +1,169 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before{
+    box-sizing: inherit;
+}
+body{
+    color: #343434;
+    margin: 0px;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: light;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+img{
+    width: 300px;   /* size of image */
+}
+a{
+    color: #ffe66d
+}
+a:hover{
+    text-decoration: none;
+    font-size: 20px;
+}
+h1{
+    font-size: 100px;
+}
+
+h2{
+    font-size: 45px;
+    padding-top: 20px
+    
+}
+h3{
+    margin-bottom: 0;
+    display: inline;
+}
+h1, h2{
+    font-family: 'Caveat', cursive;
+    font-weight: 100;
+    margin: 0;
+    line-height: 1
+
+}
+.content_wrap{
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+.skills{
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+.project-detail h3 + p{
+    font-style: italic;
+}
+.project-detail h3~p{
+    margin: 0;
+}
+.divider > section{
+    border-bottom: #343434 dotted 1px;
+    padding: 25px 0;
+}
+.divider >section:last-child{
+    border-bottom: none
+}
+/* profile */
+header{
+    color: #f7f7f7;
+    background: #2f3061;
+}
+.project-item{
+    background: #f7f7f7;
+    overflow: hidden;
+    
+}
+.bor{
+    margin-bottom: 20px;
+    float: left;
+}
+.project-item h3{
+    margin-top: 0;
+}
+.projects a{
+    background: #2f3061;
+    
+}
+.my_projects .btn{
+    color: #f7f7f7;
+    background: #2f3061;
+    text-decoration: none;
+    padding:8px ;
+    border-radius: 4px;
+    display: inline-block;
+}
+.my_projects .btn:hover{
+    background: rgba(47, 48, 97, 70%);
+}
+
+/* Skills */
+.skills{
+    background: #A1C6D7
+}
+
+/* Education */
+.education{
+    background-image: url(./joanna-kosinska-unsplash.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px
+}
+.education p{
+    width: 60%;
+}
+
+/* footer */
+footer{
+    background: #343434;
+    color: #f7f7f7;
+}
+.contact-list{
+    list-style-type: none;
+    padding: 0;
+}
+.contact-list a{
+    padding: 20px;
+    display: inline-block;
+}
+
+/*----------- Responsiveness-----------------------
+-------------------- */
+@media screen and (min-width:750px){
+    .project-item img{
+    float: left;
+    margin-right: 15px;
+    } 
+    .job-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+    }
+    header, footer{
+        text-align: center;
+    }
+    .contact-list{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:749px){
+    h1{
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 10px
+    }
+    h2{
+        line-height: 1
+    }
+    .contact-list a{
+        padding: 5px
+    }
+}
+
+
