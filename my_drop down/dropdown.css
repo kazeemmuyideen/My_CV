@@ -1,0 +1,65 @@
+html{
+    background-image: url(./coffee\ 2.jpg);
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+body{
+    font-size: 22px;
+    line-height: 32px;
+    color: #ffffff;
+    font-family: 'Open Sans',sans-serif;
+}
+nav{
+    background-color: #1289dd;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+nav ul li{
+    display:inline-block;
+}
+nav a{
+    display: block;
+    padding: 0 10px;
+    color: #ffffff;
+    line-height:60px;
+    text-decoration: none;
+}
+/* Hide Dropdown by default */
+nav ul ul{
+    display: none;
+    position: absolute;
+    top:60px;
+}
+/* hover */
+nav a:hover{
+    background-color: #000
+}
+
+/* Display dropdown on hover */
+nav ul li:hover > ul{
+    display: inherit;
+}
+/* First tier dropdown */
+nav ul ul li{
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+/* =================== Second, Third, and More Tiers */
+nav ul ul ul li{
+    position: relative;
+    top: -60px;
+    left: 160px;
+}
+/* Change this in order to change the dropdown symbol*/
+li > a::after{content: '+';}
+li > a:only-child::after{content:'';}

@@ -107,7 +107,7 @@ header{
 
 /* Education */
 .education{
-    background-image: url(./joanna-kosinska-unsplash.jpg);
+    background-image: url(./images/joanna-kosinska-unsplash.jpg);
     background-position: top right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -149,6 +149,9 @@ footer{
     .contact-list{
         display: flex;
         justify-content: center;
+    }
+    footer{
+        padding-bottom: 15px;
     }
 }
 
